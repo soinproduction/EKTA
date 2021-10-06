@@ -1,0 +1,23 @@
+.status-box {
+  width: 66%;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__descr {
+    font-family: $font-family--s;
+    font-style: normal;
+    font-weight: normal;
+    font-size: Min(4.375vw,18px);
+    line-height: Min(5.625vw,23px);
+    width: 75%;
+    color: $text--black;
+  }
+
+  &__form {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  @@include('_header.html',{})
+  <main>
+
+    <section class="main-sec">
+      <h1 class="title-1 visually-hidden">
+        На этой странице можно отследить статус вашего страхового полиса.
+      </h1>
+
+      <div class="container">
+        <div class="status-box">
+          <h2 class="status-box__title title-2">
+            Отследить статус страхового полиса
+          </h2>
+
+          <form action="#" class="status-box__form main-form">
+            <input type="number" required placeholder="Введите номер страхового полиса">
+            <button class="main-form__search main-btn">
+              Отследить
+            </button>
+          </form>
+
+          <p class="status-box__descr">
+            На этой странице можно отследить статус вашего страхового полиса. Для этого введите в поле номер договора и нажмите «отследить»
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+  @@include('_footer.html',{})
+  <script src="js/swiper.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/yt-lazyload.min.js"></script>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.main-btn {
+  height: Min(8.125vw,54px);
+  width: Min(25.625vw,174px);
+  border-radius: 4px;
+  background: $color--blue;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: Min(2.813vw,16px);
+  line-height: Min(3.438vw,19px);
+  color: $text--white;
+
+  &--grey {
+    background: $color--disabled;
+  }
+}
+
+.entry-btn {
+  font-size: Min(2.813vw,16px);
+  line-height: Min(3.438vw,19px);
+  color: $text--black;
+  height: Min(8.125vw,54px);
+  width: Min(14.750vw,112px);
+  border: 0.421405px solid $color--blue;
+  border-radius: 4px;
+}
