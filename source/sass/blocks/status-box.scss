@@ -1,6 +1,7 @@
 .status-box {
-  width: 66%;
-  margin: 0 auto;
+  min-width: 66%;
+  max-width: 958px;
+  margin: 0 auto 25px;
 
   &__title {
     text-align: center;

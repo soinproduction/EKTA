@@ -24,3 +24,9 @@
   border: 0.421405px solid $color--blue;
   border-radius: 4px;
 }
+
+.group-btn {
+  display: flex;
+  align-items: center;
+  grid-gap: 0.5vw;
+}

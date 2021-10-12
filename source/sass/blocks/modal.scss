@@ -1,0 +1,134 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -10;
+  opacity: 0;
+  transition: .4s;
+  transform: translateY(-100%);
+  &.active {
+    z-index: 10;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+
+.modal {
+  padding-top: Min(7.813vw ,30px);
+  padding-bottom: Min(7.813vw ,30px);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: Min(84.375vw ,360px);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  // min-height: 400px;
+  transition: all .5s;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  &.active {
+    display: flex;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 5px;
+  margin-bottom: 20px;
+
+  &__top {
+    font-family: $font-family--s;
+    font-style: normal;
+    font-weight: bold;
+    font-size: Min(5.625vw,20px);
+    line-height: Min(7.188vw,25px);
+
+    color: $text--light;
+  }
+
+  &__bottom {
+    font-family: $font-family--s;
+    font-style: normal;
+    font-weight: bold;
+    font-size: Min(5vw,18px);
+    line-height: Min(6.250vw,23px);
+
+    color: $text--light;
+  }
+}
+
+.modal-form {
+  width: 86%;
+
+  input {
+    height: 50px;
+    border: 1px solid #0B1F35;
+    border-radius: 7px;
+    text-indent: Min( 4.063vw ,20px);
+    font-family: $font-family--s;
+    font-style: normal;
+    font-weight: normal;
+    font-size: Min( 5vw,20px);
+    line-height: Min(6.250vw ,25px);
+    color: $text--black;
+    margin-bottom: 25px;
+
+    &::placeholder {
+      font-family: $font-family--s;
+      font-style: normal;
+      font-weight: normal;
+      font-size: Min( 5vw,20px);
+      line-height: Min(6.250vw ,25px);
+
+      color: rgba(125, 125, 125, 0.5);
+    }
+  }
+
+  span {
+    display: block;
+    margin: 0 auto;
+    font-family: $font-family--s;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $text--light;
+    width: 85%;
+
+    a {
+      text-decoration-line: underline;
+      color: $text--blue;
+    }
+
+    b {
+      font-weight: inherit;
+      color: $text--blue;
+    }
+  }
+
+  &__btn {
+    margin: 24px auto 0;
+    display: block;
+
+    &.disable {
+      background: rgba(21, 73, 159, 0.2);
+      pointer-events: none;
+    }
+  }
+}

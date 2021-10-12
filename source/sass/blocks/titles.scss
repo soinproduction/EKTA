@@ -2,8 +2,8 @@
   font-family: $font-family--s;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: Min( 10.938vw, 50px);
+  line-height: calc(100% + 10px);
   color: $text--light;
 }
 
@@ -11,8 +11,8 @@
   font-family: $font-family--s;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: Min(7.813vw, 40px);
+  line-height: calc(100% + 10px);
   color: $text--light;
 }
 

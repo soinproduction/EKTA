@@ -17,7 +17,7 @@
           </h2>
 
           <form action="#" class="status-box__form main-form">
-            <input type="number" required placeholder="Введите номер страхового полиса">
+            <input class="false" type="number" value="211552221" required placeholder="Введите номер страхового полиса">
             <div class="group-btn">
               <button class="main-form__search main-btn">
                 Отследить
@@ -25,8 +25,8 @@
             </div>
           </form>
 
-          <p class="status-box__descr">
-            На этой странице можно отследить статус вашего страхового полиса. Для этого введите в поле номер договора и нажмите «отследить»
+          <p class="status-box__descr false">
+            Ваш полис не найден в системе. Проверьте номер договора
           </p>
 
         </div>
@@ -56,9 +56,6 @@
 
 
   </main>
-
-  @@include('_modal.html',{})
-
   @@include('_footer.html',{})
   <script src="js/common.min.js"></script>
 </body>

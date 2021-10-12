@@ -6,7 +6,14 @@
     height: Min(8.125vw,54px);
     border: 1px solid $color--blue;
     border-radius: 10px;
-    text-indent: 30px;
+    text-indent: 2vw;
+    font-family: $font-family--s;
+    font-style: normal;
+    font-weight: bold;
+    font-size: Min(5vw,20px);
+    line-height: calc(100% + 5px);
+
+    color: $color--black;
 
     &::placeholder {
       font-family: $font-family--s;
@@ -22,4 +29,13 @@
   &__search {
     flex-shrink: 0;
   }
+}
+
+
+.true {
+  color: $text--true !important;
+}
+
+.false {
+  color: $text--false !important;
 }
